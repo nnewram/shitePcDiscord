@@ -33,6 +33,6 @@ const int BLOCKSIZ = 1024;
 _Bool listening = 1; // set this to 0 at the end of program
 
 struct VoiceBlock {
-    char **data;
-    size_t *size;
+    char *data;
+    size_t size;
 };

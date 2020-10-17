@@ -26,7 +26,7 @@ int recvOneBlock(int socketId, struct VoiceBlock *vb) {
         char *tmp = realloc(buf, vbsize);
         
         if (!tmp) {
-            logError("Error, tried to realloc %d for socket %d.", vbsize, socketId);
+            logError("Error, tried to realloc %sz for socket %d.", vbsize, socketId);
             free(buf);
             return ERROR;
         }
@@ -42,7 +42,7 @@ int recvOneBlock(int socketId, struct VoiceBlock *vb) {
 }
 
 void playOnceBlock(struct VoiceBlock vb) {
-    /*play a voice block*/
+    ;/*play a voice block*/
 }
 
 void vcRecvPlay(int socketId) {
