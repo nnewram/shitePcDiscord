@@ -1,5 +1,3 @@
-#include <sys/socket.h> 
-#include <arpa/inet.h> 
 #include "../common/common.c"
 
 int remvc(char* ip, int port) {
